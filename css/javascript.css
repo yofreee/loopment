@@ -1,0 +1,142 @@
+/*Fonts-family's Roboto Mono*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;0,700;1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --color-primary: #A5A6F6;
+    --color-secondary: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #A5A6F6;
+    --font-primary: 'Roboto Mono', monospace;
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 4.8rem;
+    background: var(--color-primary);
+}
+.header-img-logo{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    width: 95%;
+    height: auto;
+    align-items: center;
+}
+
+.header-img-logo img{
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto;
+}
+
+/* main*/
+.main-container-final{
+    display: grid;
+    grid-template-rows: repeat(1, 100px);
+    width: 100%;
+    min-width: 320px;
+    height: 70px;
+    background: var(--color-primary);
+    justify-content: center;
+    border-block-start: .1rem solid white;
+}
+.main-content-text-home{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 6rem;
+    background: var(--color-secondary);
+    margin: 0 auto;
+    place-items: center;
+}
+.main-content-text-home a{
+    display: flex;
+    place-items: center;
+    place-content: center;
+    text-align: center;
+    width: 12.5rem;
+    height: 4rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: var(--font-primary);
+    color: white;
+    margin: 0 auto;
+    border: none;
+    border-radius: 2.9rem;
+    background: var(--color-primary);
+}
+
+/* Segunda sección*/
+.home-container{
+    width: 100%;
+    min-width: 320px;
+    min-height: 43rem;
+    background: var(--color-primary);
+}
+.home-container .home-box-content{
+    display: grid;
+    grid-template-rows:repeat(1, minmax(auto-fit, 95%)) ;
+    width: 85%;
+    height: auto;
+    background: var(--color-secondary);
+    border: none;
+    border-radius: 1.5rem;
+    margin: 0 auto;
+}
+.home-box-content a{
+    font-size: 1.2rem;
+    text-align: start;
+    margin-inline-start: 1rem;
+    margin-block-start: .2rem;
+    margin-block-end: .2rem;
+    color: white;
+}
+.home-box-content a::before{
+    content: "📖";
+    margin-inline-end: .5rem;
+}
+ /* footer */
+ .footer-container{
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     min-width: 320px;
+     height: 10rem;
+     background: var(--color-primary);
+ }
+ .footer-box-content{
+     display: flex;
+     justify-content: center;
+     place-items: center;
+     width: 100%;
+     height: auto;
+ }
+ .footer-box-content p{
+     font-size: 1rem;
+     font-weight: 500;
+     font-family: var(--font-primary);
+     color: white;
+     text-align: center;
+ }
+
+
+/* media queries*/
+/* Contenedor de home a cierta medida redondeará sus bordes para estilizarlo mejor, y el parrafo se centrará*/
+@media screen and (min-width: 321px){
+    .main-content-text-home{
+        border-radius: none;
+        border-radius: 1.5rem;
+    }
+
+}
+}
